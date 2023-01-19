@@ -1,5 +1,5 @@
 {% set name = "speedy-antlr-tool" %}
-{% set version = "1.3.1" %}
+{% set version = "1.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/speedy-antlr-tool-{{ version }}.tar.gz
-  sha256: ae9de3374dbb867f8b433570a31884ab6eaa0bfdb8c950227eb00ed293983431
+  sha256: aea85151656fcddbcfe6e3aad36b5e29c3991c1ee63860fac67efbe38871b626
 
 build:
   noarch: python
@@ -20,7 +20,7 @@ requirements:
     - pip
   run:
     - python >=3.6
-    - antlr4-python3-runtime >=4.9.3
+    - antlr4-python3-runtime >=4.10, <4.11
     - jinja2
 
 test:
