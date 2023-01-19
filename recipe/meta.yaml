@@ -1,6 +1,7 @@
 {% set name = "speedy-antlr-tool" %}
 {% set version = "1.4.1" %}
 
+
 package:
   name: {{ name|lower }}
   version: {{ version }}
@@ -20,7 +21,7 @@ requirements:
     - pip
   run:
     - python >=3.6
-    - antlr4-python3-runtime >=4.9.3
+    - antlr4-python3-runtime >=4.10, <4.11
     - jinja2
 
 test:
