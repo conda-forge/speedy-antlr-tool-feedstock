@@ -1,11 +1,11 @@
-About speedy-antlr-tool
-=======================
+About speedy-antlr-tool-feedstock
+=================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/speedy-antlr-tool-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/amykyta3/speedy-antlr-tool
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/speedy-antlr-tool-feedstock/blob/main/LICENSE.txt)
 
 Summary: Generate an accelerator extension that makes your Antlr parser in Python super-fast!
 
