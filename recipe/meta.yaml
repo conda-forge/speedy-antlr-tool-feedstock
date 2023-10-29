@@ -1,5 +1,5 @@
 {% set name = "speedy-antlr-tool" %}
-{% set version = "1.4.2" %}
+{% set version = "1.4.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/speedy-antlr-tool-{{ version }}.tar.gz
-  sha256: 1515ee46c241d97cb66bcbdc7f15f5c54aa24fc868d6d79cad0575aed19ee356
+  sha256: 1d1f6776bf66e6d9f8b01c5b84df239a58a9abb1d4bf22ae33a82666313df4fa
 
 build:
   noarch: python
