@@ -2,18 +2,18 @@ schema_version: 1
 
 context:
   name: speedy-antlr-tool
-  version: 1.4.3
+  version: "1.4.4"
 
 package:
   name: ${{ name|lower }}
   version: ${{ version }}
 
 source:
-  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/speedy-antlr-tool-${{ version }}.tar.gz
-  sha256: 1d1f6776bf66e6d9f8b01c5b84df239a58a9abb1d4bf22ae33a82666313df4fa
+  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
+  sha256: eff834dc40d843550ed25fc72c013af3ddf899d8e70e7b79491f3afdbfc067ca
 
 build:
-  number: 2
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv
 
